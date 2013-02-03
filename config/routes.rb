@@ -7,5 +7,5 @@ MyDesign::Application.routes.draw do
   get "gallery" => "home#gallery"
   get "about_us" => "home#about_us"
   get "contact_us" => "home#contact_us"
-  get "prices" => "home#prices"
+  get "services" => "home#services"
 end
