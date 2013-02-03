@@ -33,7 +33,11 @@ $(document).ready(function(){
     var menu = $('div#main_navigation');
     var offset = menu.offset().top;
     var menuStartPos = menu.position().top;
-    var top_offset = -79;
+    if($.browser.name == 'firefox'){
+    	var top_offset = -32;
+    }else{
+    	var top_offset = -79;
+    }
         
     updateFloatingMenu(); 
 
