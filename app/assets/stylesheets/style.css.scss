@@ -12,6 +12,23 @@ body {
 	min-width: 960px;
 	padding: 0;
 }
+
+
+/*floating menu*/
+.wrapper{
+/*    width:250px;
+    height:100%;*/
+    position:relative;
+}
+            
+.wrapper > div#main_navigation{
+    position:absolute;
+/*    width:100%;*/
+}
+
+/*end of floating menu css*/
+
+
 #header {
 	background: url(../assets/bg-header.png) repeat-x top center;
 	height: 161px;
@@ -24,29 +41,32 @@ body {
 	padding: 0;
 	width: 960px;
 }
-#header div a.logo {
+#header span a.logo {
 	display: block;
-	float: left;
-	margin: 21px 0 0 26px;
+	margin: 0px 0 0 500px;
 	padding: 0
 }
-#header div a.logo img {
+#header span a.logo img {
 	border: 0;
 }
 
-#header div a img{
-	padding-top:8px;
+#header span a img{
+	padding-top:20px;
+	padding-left:270px;
 }
 
-#header div ul {
+#header span div ul {
 	background: url(../assets/bg-navigation.png) no-repeat left top;
-	float: right;
-	margin: 40px 0 0;
+	/*float: right;*/
+	/*margin: 40px 0 0;*/
+	position: absolute;
+	left:59%;
+	top:15px;
 	overflow: hidden;
 	padding: 0 0 0 8px;
 	width: 653px;
 }
-#header div ul li {
+#header span div ul li {
 	float: left;
 	font-size: 14px;
 	list-style: none;
@@ -54,7 +74,7 @@ body {
 	padding: 14px 0 27px;
 	width: 104px;
 }
-#header div ul li a {
+#header span div ul li a {
 	color: #bab6b4;
 	display: block;
 	line-height: 14px;
@@ -62,7 +82,7 @@ body {
 	text-decoration: none;
 	text-transform: capitalize;
 }
-#header div ul li a:hover, #header div ul li.selected a {
+#header span div ul li a:hover, #header div ul li.selected a {
 	color: #fff;
 }
 #body {

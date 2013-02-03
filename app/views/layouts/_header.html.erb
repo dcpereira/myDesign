@@ -1,6 +1,7 @@
-<div id="header">
-	<div style="width:990px">
-		<a href="index.html" class="logo"><img src="assets/logo.png" alt=""></a>
+<div id="header" >
+	<span><a href="index.html" class="logo"><img src="assets/logo.png" alt=""></a></span>
+	<span class="wrapper">
+		<div style="width:990px" id="main_navigation" class="floating_nav">
 			<ul>
 				<li class="selected">
 					<a href="index.html">home</a>
@@ -21,5 +22,39 @@
 					<a href="contact.html">contact us</a>
 				</li>
 			</ul>
-	</div>
+		</div>
+	</span>
+
 </div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    var speed = 400;
+    var menu = $('div#main_navigation');
+    var offset = menu.offset().top;
+    var menuStartPos = menu.position().top;
+    var top_offset = -79;
+        
+    updateFloatingMenu(); 
+
+$(window).scroll(function(){
+    updateFloatingMenu();
+});
+
+
+function updateFloatingMenu(){
+    var scrollAmount = $(document).scrollTop();
+    var newPosition = menuStartPos + scrollAmount;
+
+    if(scrollAmount > offset){
+        var topPos = (newPosition-offset) + top_offset;
+        menu.stop().animate({top: topPos}, speed);
+    }else{
+        menu.stop().animate({top: menuStartPos}, speed);
+    }
+};
+
+});
+
+
+</script>
