@@ -4,9 +4,11 @@ $(document).ready(function(){
     var offset = menu.offset().top;
     var menuStartPos = menu.position().top;
     if($.browser.name == 'firefox'){
-    	var top_offset = -30;
+    	var top_offset = -37;
+        var speed = 350;
     }else{
-    	var top_offset = -86;
+    	var top_offset = -93;
+        var speed = 400;
     }
         
     updateFloatingMenu(); 
