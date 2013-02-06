@@ -4,10 +4,10 @@ $(document).ready(function(){
     var offset = menu.offset().top;
     var menuStartPos = menu.position().top;
     if($.browser.name == 'firefox'){
-    	var top_offset = -37;
+    	var top_offset = -19;
         var speed = 350;
     }else{
-    	var top_offset = -93;
+    	var top_offset = -75;
         var speed = 400;
     }
         

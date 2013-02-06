@@ -14,20 +14,25 @@ body {
 }
 
 
-/*floating menu*/
+
+#header_wrapper{
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+}
 .wrapper{
-/*    width:250px;
-    height:100%;*/
-    position:relative;
+	position:absolute;
+  margin: 0 auto;
+	padding: 0;
+	width: 960px;
 }
             
 .wrapper > div#main_navigation{
-    position:absolute;
-/*    width:100%;*/
+  position:relative;
+  top:15px;
+  left:155px;
+
 }
-
-/*end of floating menu css*/
-
 
 #header {
 	background: url(../assets/bg-header.png) repeat-x top center;
@@ -35,16 +40,19 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+
 #header> div {
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
 	width: 960px;
 }
+
 #header span a.logo {
 	display: block;
-	margin: 0px 0 0 500px;
-	padding: 0
+	margin: 0px 0 0 0px;
+	padding: 0;
 }
 #header span a.logo img {
 	border: 0;
@@ -52,16 +60,11 @@ body {
 
 #header span a img{
 	padding-top:45px;
-	padding-left:270px;
+	padding-left:340px;
 }
 
 #header span div ul {
 	background: url(../assets/bg-navigation.png) no-repeat left top;
-	/*float: right;*/
-	/*margin: 40px 0 0;*/
-	position: absolute;
-	left:59%;
-	top:23px;
 	overflow: hidden;
 	padding: 0 0 0 8px;
 	width: 653px;
