@@ -7,5 +7,9 @@ MyDesign::Application.routes.draw do
   get "gallery" => "home#gallery"
   get "about_us" => "home#about_us"
   get "contact_us" => "home#contact_us"
+  post "contact_us" => "home#contact_us"
   get "services" => "home#services"
+  get "faq" => "home#faq"
+  get "enquiry" => "home#send_enquiry"
+  post "enquiry" => "home#send_enquiry"
 end

@@ -1,19 +1,22 @@
 /* Website Template by freewebsitetemplates.com */
 @font-face {
 	font-family: 'Forum-Regular';
-	src: url('../fonts/Forum-Regular.eot');
-	src: url('../fonts/Forum-Regular.woff') format('woff'), url('../fonts/Forum-Regular.ttf') format('truetype'), url('../fonts/Forum-Regular.svg') format('svg');
+	src: url('fonts/Forum-Regular.otf');
+	src: url('fonts/Forum-Regular.ttf') format('truetype');
 }
 body {
 	background: #fff;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
 	margin: 0;
 	min-width: 960px;
 	padding: 0;
 }
 
-
+.font{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
 
 #header_wrapper{
 	margin: 0 auto;
@@ -26,7 +29,7 @@ body {
 	padding: 0;
 	width: 960px;
 }
-            
+
 .wrapper > div#main_navigation{
   position:relative;
   top:15px;
@@ -40,7 +43,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
 
 #header> div {
 	margin: 0 auto;
@@ -96,13 +98,13 @@ body {
 #body .body {
 	padding: 40px 0 0;
 }
-#body .body h1 {
+#body h1 {
 	color: #e91391;
 	font-family: 'Forum-Regular';
 	font-size:30px;
 	font-weight:normal;
 	margin: 0;
-	padding: 0 0 0 30px;
+	padding: 0 0 0 0px;
 }
 #body .body p {
 	color: #7d7978;
@@ -145,22 +147,25 @@ body {
 #body .content {
 	background: url(../assets/bg-content.png) no-repeat top center;
 	margin: 0 0 63px;
-	min-height: 850px;
+	// min-height: 850px;
 	padding: 0;
+
+  h1 { padding-left:30px;}
+  h2 { padding-left:30px;}
 }
 #body h2 {
 	color: #e91391;
 	font-family: 'Forum-Regular';
-	font-size:30px;
+	font-size:25px;
 	font-weight:normal;
 	letter-spacing: 0.05em;
 	margin: 0;
-	padding: 55px 0 10px 10px;
+	padding: 10px 0 10px 10px;
 }
 #body .content ul {
 	margin: 0;
 	overflow: hidden;
-	padding: 40px 0 0;
+	padding: 10px 0 0;
 }
 #body .content ul li {
 	float: left;

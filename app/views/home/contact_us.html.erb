@@ -1,0 +1,43 @@
+<div class='body'>
+
+<h1>Contact Us</h1>
+
+  <h3>Call us:</h3>
+  <p>
+  Geeral Enquiries: 07902 386 136</br>
+
+    David - Sales and project management lead : 07902 386 136<br/>
+    Daniel - Principle Arcitectural Consultant: 07900 456 088
+  </p>
+
+	<h3>Enquire by email:</h3>
+
+	<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+  <% end %>
+<p>
+	<%= form_tag  enquiry_path, method: 'post' do %>
+
+		<%= label_tag :customer_name, 'Name', :class => 'font'  %>
+		<%= text_field_tag :customer_name, 'yoyo' %>
+		<br />
+		<%= label_tag :email_address, 'Email'  %>
+		<%= text_field_tag :email_address, 'toys@central.com' %>
+		<br />
+		<br />
+		<%= label_tag :email_message, 'Message'  %>
+		<br />
+		<%= text_area_tag :email_message, "Description goes here.", :size => "50x10", :id => "email_message_box" %>
+		<br />
+
+		<%= submit_tag :submit %>
+	<% end %>
+</p>
+<p>
+	<h2>How to find us:</h2>
+	<%= image_tag("map_location.png", :alt => "map") %>
+	<br />
+	<br />
+	</p>
+
+</div>

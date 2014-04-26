@@ -5,17 +5,22 @@ $(document).ready(function(){
     var menuStartPos = menu.position().top;
     if($.browser.name == 'firefox'){
     	var top_offset = -19;
-        var speed = 350;
+        var speed = 0;
     }else{
     	var top_offset = -75;
-        var speed = 400;
+        var speed = 0;
     }
-        
-    updateFloatingMenu(); 
+
+    updateFloatingMenu();
 
 $(window).scroll(function(){
     updateFloatingMenu();
 });
+
+$("#email_message_box").click(function(){
+    $("#email_message_box").clear;
+});
+
 
 
 function updateFloatingMenu(){
@@ -29,5 +34,7 @@ function updateFloatingMenu(){
         menu.stop().animate({top: menuStartPos}, speed);
     }
 };
+
+
 
 });
