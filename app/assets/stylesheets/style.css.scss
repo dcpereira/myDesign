@@ -96,7 +96,11 @@ body {
 	width: 960px;
 }
 
-.page_heading{ text-align:center;padding-top:50px;padding-bottom:15px }
+#body h1.page_heading{
+  text-align:center;
+  padding-top:50px;
+  padding-bottom:15px;
+}
 
 
 #body .body {
