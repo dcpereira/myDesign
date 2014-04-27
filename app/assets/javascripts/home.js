@@ -12,6 +12,7 @@ $(document).ready(function(){
     }
 
     updateFloatingMenu();
+    open_modal();
 
 $(window).scroll(function(){
     updateFloatingMenu();
@@ -35,6 +36,13 @@ function updateFloatingMenu(){
     }
 };
 
-
+function open_modal(){
+  $('.thumb-click').click(function(){
+    var options = {"show" : "true"}
+    var img_path = $(this).children()[0].src.match(/\/assets\/.+$/g);
+    $('#modal-image').attr('src', img_path)
+    $('#yll').modal(options);
+  })
+}
 
 });
