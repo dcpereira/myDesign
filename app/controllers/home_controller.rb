@@ -22,20 +22,20 @@ class HomeController < ApplicationController
 	def faq
 	end
 
-
-
 	#private  - still to decide
 	def send_enquiry
 		user_name = params['customer_name']
 		user_email_address = params['email_address']
 		user_meesage = params['email_message']
-		EnquiryMailer.customer_enquiry(
-			user_name, 
-			user_email_address, 
-			user_meesage).
-		deliver
-		 flash[:notice] = "Post successfully created"
-		redirect_to contact_us_path 
+
+    EnquiryMailer.customer_enquiry(user_name, user_email_address, user_meesage)
+      .deliver
+
+    EnquiryMailer.enquiry_confirmation(user_name, user_email_address).
+      deliver
+
+    flash[:notice] = "Email successfully sent"
+		redirect_to contact_us_path
 	end
 
 end

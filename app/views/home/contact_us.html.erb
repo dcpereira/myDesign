@@ -3,8 +3,7 @@
 
     <h3>Call us:</h3>
     <p>
-      Geeral Enquiries: 07902 386 136</br>
-
+      Geeral Enquiries: 07902 386 136</br></br>
       David - Sales and project management lead : 07902 386 136<br/>
       Daniel - Principle Arcitectural Consultant: 07900 456 088
     </p>
@@ -17,19 +16,19 @@
   <p>
     <%= form_tag  enquiry_path, method: 'post' do %>
 
-      <%= label_tag :customer_name, 'Name', :class => 'font'  %>
-      <%= text_field_tag :customer_name, 'yoyo' %>
+      <%= label_tag :customer_name, 'Name', :class => 'font '  %>
+      <%= text_field_tag :customer_name, '', :class => 'form-control email-input' %>
       <br />
-      <%= label_tag :email_address, 'Email'  %>
-      <%= text_field_tag :email_address, 'toys@central.com' %>
+      <%= label_tag :email_address, 'Email' %>
+      <%= text_field_tag :email_address, '', :class => 'form-control email-input' %>
       <br />
       <br />
       <%= label_tag :email_message, 'Message'  %>
       <br />
-      <%= text_area_tag :email_message, "Description goes here.", :size => "50x10", :id => "email_message_box" %>
+      <%= text_area_tag :email_message, "Description goes here.", :class => "form-control email-details-input", :size => "50x10", :id => "email_message_box" %>
       <br />
 
-      <%= submit_tag :submit %>
+      <%= submit_tag :Send, :class => "btn btn-primary" %>
     <% end %>
   </p>
   <p>

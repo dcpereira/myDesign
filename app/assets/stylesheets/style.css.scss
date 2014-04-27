@@ -121,6 +121,10 @@ body {
 	padding: 0 30px 25px;
 	text-align: justify;
 }
+
+body .email-input{ width:20em; }
+body .email-details-input { width:40em; }
+
 #body .body p a {
 	color: #7D7978;
 	text-decoration: underline;
@@ -238,6 +242,11 @@ body {
 #body .content ul.paging li a:hover ,#body .content ul.paging li.selected a{
 	color: #e91391
 }
+
+
+// # Gallery
+img.gallery-thumbs{ height:134px; width:194px; }
+
 #body .content ul.gallery {
 	margin: 0;
 	padding: 0 30px;
@@ -258,7 +267,7 @@ body {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	float: none;
-	margin: 0 0 30px;
+	margin: 30px;
 	padding: 0;
 }
 #body .content ul.gallery li a span {

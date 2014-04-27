@@ -1,0 +1,18 @@
+Dear <%= @customer_name.blank? ? 'Customer' : @customer_name %>,
+
+<p>
+	Thank you for your enquiry. A company representiive is currently dealling with your enquiry and will be in touch with you shortly.
+<p>
+<p>
+	In the meantime may we refer you to our 
+	<%= link_to 'F.A.Q', faq_path %> 
+	section of the Mydesign website. <br />Where you find some anwsers to some of the questions you might have.
+</p>
+<br />
+<br />
+<p>
+	Kindest of Regards <br />
+
+	My-Design Team.
+</p>
+
